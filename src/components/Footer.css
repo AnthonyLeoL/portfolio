@@ -1,0 +1,21 @@
+.footer {
+  background-color: rgb(32, 31, 29);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  -webkit-box-shadow: 2px -4px 4px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px -4px 4px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px -4px 4px 0px rgba(0, 0, 0, 0.75);
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  position: absolute;
+  z-index: 1;
+  color: white;
+}
+.logo {
+  height: 70px;
+  position: relative;
+  z-index: 3;
+}
