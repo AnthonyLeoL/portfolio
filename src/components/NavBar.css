@@ -35,7 +35,7 @@
 
 .header {
   width: 100%;
-  position: absolute;
+  position: sticky;
   top: 0;
   left: 0;
   height: 80px;
@@ -48,12 +48,12 @@
   width: 75px;
   position: relative;
   z-index: 3;
-  padding-left: 62px;
+  padding-left: 58px;
 }
 
 .home_icon {
   margin-left: auto;
-  padding-right: 10px;
+  padding-right: 58px;
 }
 .navbar-item {
   background-color: #555350;

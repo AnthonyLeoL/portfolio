@@ -3,12 +3,8 @@ html {
 }
 body {
   background: linear-gradient(0.25turn, #5a0000, #def7cb, #473505);
-  height: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 .spacer {
-  padding-top: 80px;
   padding-bottom: 100px;
 }
 
