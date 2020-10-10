@@ -12,14 +12,17 @@ interface AppProps {}
 const App: React.FC<AppProps> = ({}) => {
   const [SBStatus, setSBStatus] = useState<boolean>(false);
   return (
-    <div>
+    <div className="spacer">
       <BrowserRouter>
         <Navbar status={SBStatus} setStatus={setSBStatus} />
+
         <Route path="/" exact component={Home} />
 
         <Route path="/projects" exact component={Projects} />
         <Route path="/resume" exact component={Resume} />
-        <Footer />
+        <div className="footer">
+          <Footer />
+        </div>
       </BrowserRouter>
     </div>
   );

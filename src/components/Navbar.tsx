@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import menu from "../icons/hamburger_menu.png";
+import Home from "../icons/house-512.png";
 import "./NavBar.css";
 interface NavbarProps {
   status: boolean;
@@ -9,18 +10,56 @@ interface NavbarProps {
 
 const Navbar: React.FC<NavbarProps> = ({ status, setStatus }) => {
   return (
-    <div>
+    <div className="header">
       <img
         onClick={() => {
           setStatus(!status);
         }}
-        className="logo"
+        className="menu_icon"
         src={menu}
       ></img>
-      <div className={`${status ? `closed` : ``}`}>
+      <NavLink className="home_icon" to="/">
+        <img className="logo" src={Home} />
+      </NavLink>
+      <div className={`${status ? `open` : ``}`}>
         <div className={`navBar  sidebar-left-nav`}>
-          <NavLink to="/projects">Projects</NavLink>
-          <NavLink to="/resume"> resume </NavLink>
+          <NavLink
+            className="navbar-item"
+            exact
+            activeClassName="current-tab"
+            to="/"
+          >
+            Home
+          </NavLink>
+          <NavLink
+            className="navbar-item"
+            activeClassName="current-tab"
+            to="/projects"
+          >
+            Projects
+          </NavLink>
+          <NavLink
+            className="navbar-item"
+            activeClassName="current-tab"
+            to="/resume"
+          >
+            {" "}
+            Resume{" "}
+          </NavLink>
+          <NavLink
+            className="navbar-item"
+            activeClassName="current-tab"
+            to="/refdsfsume"
+          >
+            placeholder
+          </NavLink>
+          <NavLink
+            className="navbar-item"
+            activeClassName="current-tab"
+            to="/resdfsume"
+          >
+            placeholder2
+          </NavLink>
         </div>
       </div>
     </div>
