@@ -1,15 +1,14 @@
 import React from "react";
 import "./ProjectDetails.css";
+
 interface ProjectDeatilsProps {
   name: string;
   description: string;
   imgPath: string;
-  bottomBar: [
-    {
-      icon?: string;
-      link?: string;
-    }
-  ];
+  bottomBar: {
+    icon?: string;
+    link?: string;
+  }[];
 }
 
 const ProjectDetails: React.FC<ProjectDeatilsProps> = ({
@@ -23,16 +22,16 @@ const ProjectDetails: React.FC<ProjectDeatilsProps> = ({
       <span className="title">{name}</span>
       <div className="project-body">
         <img className="image" src={imgPath}></img>
-        {description}
-        {bottomBar.map((item, i) => {
-          return (
-            <div className="bottom-bar" key={i}>
-              <a href={item.link}>
+        <p>{description}</p>{" "}
+        <div className="bottom-bar">
+          {bottomBar.map((item, i) => {
+            return (
+              <a key={i} href={item.link}>
                 <img className="logo" src={item.icon}></img>
               </a>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
     </div>
   );

@@ -1,27 +1,53 @@
+import { lorem, dailyDetails } from "../resources/projectDescriptions.module";
+
 import React from "react";
 import ProjectDetails from "../components/ProjectDetails";
 
 const dd = require("../resources/icons/dailydetails.JPG");
-const cp = require("../resources/icons/cartoon_profile.jpg");
-const git = require("../resources/icons/github_logo.png");
+const OMP = require("../resources/icons/OMP.jpg");
+const code = require("../resources/icons/code_icon.png");
+const website = require("../resources/icons/website_icon.png");
 
 interface ProjectsProps {}
-const lorem: string =
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+
 const Projects: React.FC<ProjectsProps> = ({}) => {
   return (
     <div className="project">
       <ProjectDetails
         name="Daily Details"
-        description={lorem}
+        description={dailyDetails}
         imgPath={dd}
-        bottomBar={[{ icon: undefined, link: undefined }]}
+        bottomBar={[
+          { icon: code, link: "https://github.com/AnthonyLeoL/Daily-Details" },
+          { icon: website, link: "https://dailydetails.herokuapp.com/" },
+        ]}
       />
       <ProjectDetails
-        name="testName2"
+        name="One Million Pounds"
         description={lorem}
-        imgPath={cp}
-        bottomBar={[{ icon: git, link: "https://google.com" }]}
+        imgPath={OMP}
+        bottomBar={[
+          {
+            icon: code,
+            link: "https://github.com/AnthonyLeoL/One-million-pounds",
+          },
+          {
+            icon: website,
+            link:
+              "https://play.google.com/store/apps/details?id=com.antapps.onemillionpounds",
+          },
+        ]}
+      />
+      <ProjectDetails
+        name="Quizme"
+        description={lorem}
+        imgPath={dd}
+        bottomBar={[
+          {
+            icon: code,
+            link: "https://github.com/ShaneEverittM/quiz-frontend",
+          },
+        ]}
       />
     </div>
   );
