@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import menu from "../icons/hamburger_menu.png";
-import Home from "../icons/house-512.png";
+import menu from "../resources/icons/hamburger_menu.png";
+import Home from "../resources/icons/house-512.png";
 import "./NavBar.css";
 interface NavbarProps {
   status: boolean;

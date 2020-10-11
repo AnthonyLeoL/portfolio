@@ -1,6 +1,6 @@
 import React from "react";
 
-import Profile from "../icons/cartoon_profile.jpg";
+import Profile from "../resources/icons/cartoon_profile.jpg";
 import "./Home.css";
 interface HomeProps {}
 

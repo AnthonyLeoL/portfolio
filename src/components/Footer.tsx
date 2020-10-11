@@ -1,9 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Footer.css";
-import github_logo from "../icons/github_logo.png";
-import linkedin_logo from "../icons/linkedin_logo.png";
-import location_logo from "../icons/location_icon.png";
+import github_logo from "../resources/icons/github_logo.png";
+import linkedin_logo from "../resources/icons/linkedin_logo.png";
+import location_logo from "../resources/icons/location_icon.png";
 interface FooterProps {}
 
 const Footer: React.FC<FooterProps> = ({}) => {

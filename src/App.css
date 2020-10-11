@@ -7,16 +7,3 @@ body {
 .spacer {
   padding-bottom: 100px;
 }
-
-iframe {
-  -moz-transform: scale(0.7, 0.7);
-  -webkit-transform: scale(0.7, 0.7);
-  -o-transform: scale(0.7, 0.7);
-  -ms-transform: scale(0.7, 0.7);
-  transform: scale(0.7, 0.7);
-  -moz-transform-origin: top;
-  -webkit-transform-origin: top;
-  -o-transform-origin: top;
-  -ms-transform-origin: top;
-  transform-origin: top;
-}

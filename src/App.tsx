@@ -20,9 +20,9 @@ const App: React.FC<AppProps> = ({}) => {
 
         <Route path="/projects" exact component={Projects} />
         <Route path="/resume" exact component={Resume} />
-        <div className="footer">
+        {/* <div className="footer">
           <Footer />
-        </div>
+        </div> */}
       </BrowserRouter>
     </div>
   );
