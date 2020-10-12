@@ -19,6 +19,7 @@
   height: 100px;
   color: white;
   font-size: large;
+  flex-direction: column;
   background-color: black;
   width: 90%;
   border: none;
@@ -36,5 +37,4 @@
   color: #ff1e1e;
   font-size: larger;
   font-weight: 1000;
-  margin-top: -35px;
 }

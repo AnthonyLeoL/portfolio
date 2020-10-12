@@ -51,14 +51,14 @@ const Navbar: React.FC<NavbarProps> = ({ status, setStatus }) => {
             activeClassName="current-tab"
             to="/refdsfsume"
           >
-            placeholder
+            About
           </NavLink>
           <NavLink
             className="navbar-item"
             activeClassName="current-tab"
             to="/resdfsume"
           >
-            placeholder2
+            Tutoring
           </NavLink>
         </div>
       </div>

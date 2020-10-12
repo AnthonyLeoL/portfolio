@@ -1,4 +1,5 @@
 .project-container {
+  padding-top: 10px;
   background-color: #393328;
   display: flex;
   flex-direction: column;
@@ -15,6 +16,7 @@
   margin-right: auto;
   padding: 10px;
   font-size: large;
+  width: 98%;
 }
 .image {
   max-width: 600px;
@@ -29,4 +31,10 @@
   display: flex;
   padding-top: 10px;
   justify-content: space-evenly;
+}
+
+.text-break {
+  text-align: center;
+  font-size: large;
+  padding: 100px 0 10px 0;
 }

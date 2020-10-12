@@ -8,13 +8,17 @@ const Home: React.FC<HomeProps> = ({}) => {
   return (
     <div className="profile-frame">
       <img className="profile" src={Profile}></img>
+
       <div className="infobar">
+        <div>
+          <strong>Anthony Lisa</strong>
+        </div>
         <div>
           <strong>Front-end </strong> ◇<strong> Full-stack </strong> ◇
           <strong> Mobile</strong>
         </div>
+        <span className="dev">Developer</span>
       </div>
-      <span className="dev">Developer</span>
     </div>
   );
 };
