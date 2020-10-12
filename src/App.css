@@ -2,6 +2,7 @@ html {
   font-family: Georgia, "Times New Roman", Times, serif;
   margin: 0;
   padding: 0;
+  z-index: -2;
   height: 100%;
 }
 body {
@@ -9,10 +10,13 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  position: relative;
+  z-index: -2;
 }
 #root {
   min-height: 100%;
   position: relative;
+  z-index: -2;
 }
 .main-container {
   min-height: 100%;
