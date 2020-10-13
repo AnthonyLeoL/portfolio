@@ -7,8 +7,8 @@
 }
 
 .profile {
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 250px;
   border: 15px solid black;
   border-radius: 100%;
   bottom: 0;
@@ -16,9 +16,9 @@
 }
 
 .infobar {
-  height: 100px;
+  height: 120px;
   color: white;
-  font-size: large;
+  font-size: x-large;
   flex-direction: column;
   background-color: black;
   width: 90%;
@@ -34,7 +34,7 @@
 }
 
 .dev {
-  color: #ff1e1e;
+  color: #2ecf81;
   font-size: larger;
   font-weight: 1000;
 }

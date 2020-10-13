@@ -76,7 +76,16 @@
 .current-tab {
   text-decoration: underline;
 }
-
+.toggle {
+  margin-top: 100px;
+}
+.dark {
+  background: #222121;
+}
+.color {
+  background: linear-gradient(0.25turn, #0b7aad, #7efce7, #1251c7);
+  color: black;
+}
 .navbar-item:hover {
   background-color: #201f1d;
   text-decoration: underline;

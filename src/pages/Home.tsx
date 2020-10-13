@@ -2,13 +2,15 @@ import React from "react";
 
 import Profile from "../resources/icons/cartoon_profile.jpg";
 import "./Home.css";
-interface HomeProps {}
 
-const Home: React.FC<HomeProps> = ({}) => {
+interface HomeProps {
+  isDark: boolean;
+  setTheme: React.Dispatch<React.SetStateAction<boolean>>;
+}
+const Home: React.FC<HomeProps> = ({ isDark, setTheme }) => {
   return (
     <div className="profile-frame">
-      <img className="profile" src={Profile}></img>
-
+      <img className="profile" src={Profile} alt="cartoon profile"></img>
       <div className="infobar">
         <div>
           <strong>Anthony Lisa</strong>

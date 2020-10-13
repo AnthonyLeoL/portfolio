@@ -1,10 +1,10 @@
 import {
-  lorem,
   dailyDetails,
   OMPdesc,
   quizMeDesc,
   hatDesc,
   teaDesc,
+  thisSiteDesc,
 } from "../resources/projectDescriptions.module";
 
 import React from "react";
@@ -18,14 +18,16 @@ const quizme = require("../resources/icons/create_page_quizme.png");
 const video_icon = require("../resources/icons/play_icon.png");
 const hat = require("../resources/icons/hat.jpg");
 const tea = require("../resources/icons/tea.png");
-interface ProjectsProps {}
+const this_site = require("../resources/icons/portfolio.JPG");
 
-const Projects: React.FC<ProjectsProps> = ({}) => {
+const Projects: React.FC = () => {
   return (
     <div className="project">
-      <div className="text-break">
-        See github readmes for more techinal details and full descriptions. For
-        professional projects and experience see resume
+      <div className="text-container">
+        <div className="text-break">
+          See github readmes for more techinal details and full descriptions.
+          For professional projects and experience see resume
+        </div>
       </div>
       <ProjectDetails
         name="Daily Details"
@@ -66,8 +68,25 @@ const Projects: React.FC<ProjectsProps> = ({}) => {
             link: "https://github.com/ShaneEverittM/quiz-backend",
           },
         ]}
+      />{" "}
+      <ProjectDetails
+        name="This Site!"
+        description={thisSiteDesc}
+        img={this_site}
+        bottomBar={[
+          {
+            icon: code,
+            link: "https://github.com/AnthonyLeoL/portfolio",
+          },
+          {
+            icon: website,
+            link: "/projects",
+          },
+        ]}
       />
-      <div className="text-break">Just for fun projects</div>
+      <div className="text-container">
+        <div className="text-break">Just for fun projects</div>
+      </div>
       <ProjectDetails
         name="Graduation cap"
         description={hatDesc}

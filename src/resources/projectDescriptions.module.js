@@ -11,9 +11,20 @@ const quizMeDesc =
   "A website so that anyone can create buzzfeed style quizzes easily! Front-end develpment done in React.js. Back-end done in Rust by Shane Murphy";
 
 const hatDesc =
-  "My graduation cap decked out with a servo motor, a 9 volt battery, a bread board with regulator, a 6X8 LED matrix, and a start button. Basic electronics and embedded programming used, but not shown because my robotics skills are nothing to brag about";
+  "My graduation cap decked out with a servo motor, a 9 volt battery, a bread board with regulator, an ATMega32, a 6X8 LED matrix, and a start button. Basic electronics and embedded programming used, but not shown because my robotics skills are nothing to brag about";
 
 const teaDesc =
-  "Tea making robot! Actually used for about a week with moderate success.";
+  "Tea making robot! Actually used for about a week with moderate success. Created with an esp8266MCU and a few servo motors";
 
-export { lorem, dailyDetails, OMPdesc, quizMeDesc, hatDesc, teaDesc };
+const thisSiteDesc =
+  "I made this site to showcase a few of my projects. I wrote this site in React and, for the first time, typescript. Much of this site is static and as such it didn't require too much coding in tyoescript, but my initial impression is that it's great. What could be better than error resistent Javascript? ";
+
+export {
+  lorem,
+  dailyDetails,
+  OMPdesc,
+  quizMeDesc,
+  hatDesc,
+  teaDesc,
+  thisSiteDesc,
+};

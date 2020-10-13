@@ -6,7 +6,7 @@ html {
   height: 100%;
 }
 body {
-  background: linear-gradient(0.25turn, #5a0000, #def7cb, #473505);
+  /* background: linear-gradient(0.25turn, #0b7aad, #7efce7, #1251c7); */
   margin: 0;
   padding: 0;
   height: 100%;
@@ -14,6 +14,7 @@ body {
   z-index: -2;
 }
 #root {
+  background: linear-gradient(0.25turn, #0b7aad, #7efce7, #1251c7);
   min-height: 100%;
   position: relative;
   z-index: -2;
@@ -21,6 +22,7 @@ body {
 .main-container {
   min-height: 100%;
   padding-bottom: 110px;
+  z-index: -2;
 }
 .main-body {
   min-height: 100%;
@@ -28,4 +30,5 @@ body {
 .main-footer {
   display: flex;
   align-self: flex-end;
+  z-index: 2;
 }

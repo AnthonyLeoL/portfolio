@@ -6,15 +6,17 @@
   align-items: center;
   margin-left: 5%;
   margin-right: 5%;
-  border-bottom: 1px solid black;
+
   color: white;
+  padding-bottom: 10px;
+  border-radius: 10px;
 }
 .title {
-  font-size: xx-large;
+  font-size: xxx-large;
 }
 .project-body {
   margin-right: auto;
-  padding: 10px;
+  padding: 10px 10px 0 10px;
   font-size: large;
   width: 98%;
 }
@@ -26,15 +28,31 @@
 }
 
 .bottom-bar {
-  background-color: #201f1d;
+  background-color: #eeeded;
+  border-radius: 100px;
   width: 100%;
   display: flex;
   padding-top: 10px;
+
   justify-content: space-evenly;
 }
 
 .text-break {
   text-align: center;
-  font-size: large;
-  padding: 100px 0 10px 0;
+  font-size: xx-large;
+  padding: 75px 0 50px 0;
+  width: 60%;
+  background-color: aliceblue;
+  border-radius: 10px;
+}
+.text-container {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.icon {
+  height: 50px;
+  position: relative;
+  z-index: 3;
 }

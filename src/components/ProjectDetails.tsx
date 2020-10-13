@@ -21,13 +21,13 @@ const ProjectDetails: React.FC<ProjectDeatilsProps> = ({
     <div className="project-container">
       <span className="title">{name}</span>
       <div className="project-body">
-        <img className="image" src={img}></img>
+        <img className="image" src={img} alt="project preview"></img>
         <p>{description}</p>{" "}
         <div className="bottom-bar">
           {bottomBar.map((item, i) => {
             return (
               <a key={i} href={item.link} target="blank">
-                <img className="logo" src={item.icon}></img>
+                <img className="icon" src={item.icon} alt="project link"></img>
               </a>
             );
           })}
