@@ -10,3 +10,6 @@ p {
 .longer {
   height: 100%;
 }
+a {
+  color: inherit;
+}

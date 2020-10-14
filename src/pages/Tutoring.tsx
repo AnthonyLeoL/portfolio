@@ -4,7 +4,6 @@ import headshot from "../resources/icons/einstein_quote.jpg";
 
 import "./Tutoring.css";
 interface TutoringProps {}
-const data = { name: "thon", email: "thon" };
 const Tutoring: React.FC<TutoringProps> = ({}) => {
   return (
     <div className="center-container">
@@ -41,8 +40,17 @@ const Tutoring: React.FC<TutoringProps> = ({}) => {
           <br />
         </div>
         <div>
-          For private tutoring inquiry
-          <a href="www.linkedin.com"> Here</a>
+          For private tutoring inquiry &nbsp;
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdQGxn1WEwGuJmrh3EWI5MchICFKuuex3r10av4P-JGgKSFcA/viewform?usp=sf_link"
+            about="blank"
+          >
+            Here
+          </a>
+          &nbsp; or send me a message on &nbsp;
+          <a href="https://www.linkedin.com/in/anthony-lisa" about="blank">
+            Linkedin
+          </a>
         </div>
       </div>
     </div>
