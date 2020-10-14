@@ -67,7 +67,7 @@ const Navbar: React.FC<NavbarProps> = ({
               setColor(!isDark);
             }}
           >
-            Change background!
+            Toggle Dark Theme
           </div>
         </div>
       </div>

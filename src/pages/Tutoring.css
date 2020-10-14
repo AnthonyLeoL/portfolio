@@ -1,0 +1,12 @@
+p {
+  font-size: medium;
+}
+.center-container {
+  display: flex;
+  align-items: center;
+  height: 50vh;
+}
+
+.longer {
+  height: 100%;
+}
