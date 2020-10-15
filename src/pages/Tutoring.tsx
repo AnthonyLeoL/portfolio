@@ -3,13 +3,16 @@ import React from "react";
 import headshot from "../resources/icons/einstein_quote.jpg";
 
 import "./Tutoring.css";
-interface TutoringProps {}
-const Tutoring: React.FC<TutoringProps> = ({}) => {
+const Tutoring: React.FC = () => {
   return (
     <div className="center-container">
       <div className="project-container longer">
         <div className="project-body">
-          <img className="image" src={headshot}></img>
+          <img
+            className="image"
+            src={headshot}
+            alt="Einstein quote: If you can't explain it simply, you don't understand it well enough"
+          ></img>
           <div>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I started tutoring math and
             english during my first semester in College at Los Angeles Pierce
@@ -38,7 +41,7 @@ const Tutoring: React.FC<TutoringProps> = ({}) => {
             continue to tutor and I never fail to enjoy it.
           </div>
           <br />
-          <div>
+          <div style={{ textAlign: "center" }}>
             For private tutoring inquiry &nbsp;
             <a
               href="https://docs.google.com/forms/d/e/1FAIpQLSdQGxn1WEwGuJmrh3EWI5MchICFKuuex3r10av4P-JGgKSFcA/viewform?usp=sf_link"

@@ -26,7 +26,7 @@ const Projects: React.FC = () => {
       <div className="text-container">
         <div className="text-break">
           See github readmes for more techinal details and full descriptions.
-          For professional projects and experience see resume
+          See resume for professional projects and experience
         </div>
       </div>
       <ProjectDetails
