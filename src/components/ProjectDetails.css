@@ -6,7 +6,7 @@
   align-items: center;
   margin-left: 5%;
   margin-right: 5%;
-
+  margin-bottom: 20px;
   color: white;
   padding-bottom: 10px;
   border-radius: 10px;
@@ -19,6 +19,9 @@
   padding: 10px 10px 0 10px;
   font-size: large;
   width: 98%;
+}
+.project-body p {
+  font-size: larger;
 }
 
 @media screen and (max-width: 600px) {

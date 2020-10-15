@@ -24,81 +24,90 @@ const Projects: React.FC = () => {
   return (
     <div className="project">
       <div className="text-container">
-        <div className="text-break">
+        <div className="text-break ">
           See github readmes for more techinal details and full descriptions.
           See resume for professional projects and experience
         </div>
       </div>
-      <ProjectDetails
-        name="Daily Details"
-        description={dailyDetails}
-        img={dd}
-        bottomBar={[
-          { icon: code, link: "https://github.com/AnthonyLeoL/Daily-Details" },
-          { icon: website, link: "https://dailydetails.herokuapp.com/" },
-        ]}
-      />
-      <ProjectDetails
-        name="One Million Pounds"
-        description={OMPdesc}
-        img={OMP}
-        bottomBar={[
-          {
-            icon: code,
-            link: "https://github.com/AnthonyLeoL/One-million-pounds",
-          },
-          {
-            icon: website,
-            link:
-              "https://play.google.com/store/apps/details?id=com.antapps.onemillionpounds",
-          },
-        ]}
-      />
-      <ProjectDetails
-        name="QuizMe"
-        description={quizMeDesc}
-        img={quizme}
-        bottomBar={[
-          {
-            icon: code,
-            link: "https://github.com/ShaneEverittM/quiz-frontend",
-          },
-          {
-            icon: code,
-            link: "https://github.com/ShaneEverittM/quiz-backend",
-          },
-        ]}
-      />{" "}
-      <ProjectDetails
-        name="This Site!"
-        description={thisSiteDesc}
-        img={this_site}
-        bottomBar={[
-          {
-            icon: code,
-            link: "https://github.com/AnthonyLeoL/portfolio",
-          },
-          {
-            icon: website,
-            link: "/projects",
-          },
-        ]}
-      />
-      <div className="text-container">
-        <div className="text-break">Just for fun projects</div>
+      <div className="project-page">
+        <ProjectDetails
+          name="Daily Details"
+          description={dailyDetails}
+          img={dd}
+          bottomBar={[
+            {
+              icon: code,
+              link: "https://github.com/AnthonyLeoL/Daily-Details",
+            },
+            { icon: website, link: "https://dailydetails.herokuapp.com/" },
+          ]}
+        />
+        <ProjectDetails
+          name="One Million Pounds"
+          description={OMPdesc}
+          img={OMP}
+          bottomBar={[
+            {
+              icon: code,
+              link: "https://github.com/AnthonyLeoL/One-million-pounds",
+            },
+            {
+              icon: website,
+              link:
+                "https://play.google.com/store/apps/details?id=com.antapps.onemillionpounds",
+            },
+          ]}
+        />
+        <ProjectDetails
+          name="QuizMe"
+          description={quizMeDesc}
+          img={quizme}
+          bottomBar={[
+            {
+              icon: code,
+              link: "https://github.com/ShaneEverittM/quiz-frontend",
+            },
+            {
+              icon: code,
+              link: "https://github.com/ShaneEverittM/quiz-backend",
+            },
+          ]}
+        />{" "}
+        <ProjectDetails
+          name="This Site!"
+          description={thisSiteDesc}
+          img={this_site}
+          bottomBar={[
+            {
+              icon: code,
+              link: "https://github.com/AnthonyLeoL/portfolio",
+            },
+            {
+              icon: website,
+              link: "/projects",
+            },
+          ]}
+        />
+        <div className="text-container">
+          <div className="text-break">Just for fun projects</div>
+        </div>
+        <ProjectDetails
+          name="Graduation cap"
+          description={hatDesc}
+          img={hat}
+          bottomBar={[
+            { icon: video_icon, link: "https://youtu.be/pS5TCuoZrZo" },
+          ]}
+        />
+        <ProjectDetails
+          name="Automatic tea brewer"
+          description={teaDesc}
+          img={tea}
+          bottomBar={[
+            { icon: video_icon, link: "https://youtu.be/x8epoHnf6lo" },
+          ]}
+        />
       </div>
-      <ProjectDetails
-        name="Graduation cap"
-        description={hatDesc}
-        img={hat}
-        bottomBar={[{ icon: video_icon, link: "https://youtu.be/pS5TCuoZrZo" }]}
-      />
-      <ProjectDetails
-        name="Automatic tea brewer"
-        description={teaDesc}
-        img={tea}
-        bottomBar={[{ icon: video_icon, link: "https://youtu.be/x8epoHnf6lo" }]}
-      />
     </div>
   );
 };
