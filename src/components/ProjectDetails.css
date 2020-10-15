@@ -20,6 +20,15 @@
   font-size: large;
   width: 98%;
 }
+
+@media screen and (max-width: 600px) {
+  .image {
+    width: 300px;
+  }
+  .bottom-bar {
+    max-width: 95%;
+  }
+}
 .image {
   max-width: 600px;
   max-height: 300px;
@@ -33,7 +42,7 @@
   width: 100%;
   display: flex;
   padding-top: 10px;
-
+  width: 100%;
   justify-content: space-evenly;
 }
 

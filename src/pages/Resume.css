@@ -2,3 +2,17 @@
   display: flex;
   justify-content: center;
 }
+
+@media screen and (max-width: 850px) {
+  iframe {
+    display: none;
+  }
+  /* #resume_alt {
+    display: block;
+  } */
+}
+@media only screen and (min-width: 851px) {
+  #resume_alt {
+    display: none;
+  }
+}
