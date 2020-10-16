@@ -53,12 +53,12 @@
   width: 75px;
   position: relative;
   z-index: 3;
-  padding-left: 58px;
+  padding-left: 62.5px;
 }
 
 .home_icon {
   margin-left: auto;
-  padding-right: 58px;
+  padding-right: 62.5px;
 }
 .navbar-item {
   background-color: #555350;

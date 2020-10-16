@@ -3,7 +3,7 @@
   justify-content: center;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 840px) {
   iframe {
     display: none;
   }
@@ -11,7 +11,7 @@
     display: block;
   } */
 }
-@media only screen and (min-width: 851px) {
+@media only screen and (min-width: 841px) {
   #resume_alt {
     display: none;
   }

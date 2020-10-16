@@ -7,18 +7,17 @@ import location_logo from "../resources/icons/location_icon.png";
 const Footer: React.FC = () => {
   return (
     <div className="footer">
-      <a href="https://www.github.com/AnthonyLeoL">
+      <a href="https://www.github.com/AnthonyLeoL" target="blank">
         <img className="logo" src={github_logo} alt="github logo" />
       </a>
 
-      <a href="https://www.linkedin.com/in/anthony-lisa">
+      <a href="https://www.linkedin.com/in/anthony-lisa" target="blank">
         <img className="logo" src={linkedin_logo} alt="linkedin logo" />
       </a>
       <span>
-        <a href="https://www.google.com/maps/place/Los+Angeles">
+        <a href="https://www.google.com/maps/place/Los+Angeles" target="blank">
           <img className="logo" src={location_logo} alt="pin point logo" />
         </a>{" "}
-        LA, California
       </span>
     </div>
   );

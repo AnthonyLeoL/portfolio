@@ -13,10 +13,14 @@ import ScrollToTop from "./components/ScrollToTop";
 import "./App.css";
 
 const App: React.FC = () => {
+  const checkTheme = (): boolean => {
+    return document.cookie === "true";
+  };
   const [SBStatus, setSBStatus] = useState<boolean>(false);
-  const [isDarkTheme, setDarkTheme] = useState<boolean>(false);
+  const [isDarkTheme, setDarkTheme] = useState<boolean>(checkTheme());
 
   useEffect(() => {
+    document.cookie = String(isDarkTheme);
     let color;
     isDarkTheme
       ? (color = "#222121")

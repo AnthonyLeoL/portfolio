@@ -45,12 +45,12 @@ const Tutoring: React.FC = () => {
             For private tutoring inquiry &nbsp;
             <a
               href="https://docs.google.com/forms/d/e/1FAIpQLSdQGxn1WEwGuJmrh3EWI5MchICFKuuex3r10av4P-JGgKSFcA/viewform?usp=sf_link"
-              about="blank"
+              target="blank"
             >
               Here
             </a>
             &nbsp; or send me a message on &nbsp;
-            <a href="https://www.linkedin.com/in/anthony-lisa" about="blank">
+            <a href="https://www.linkedin.com/in/anthony-lisa" target="blank">
               Linkedin
             </a>
           </div>
