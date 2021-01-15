@@ -13,7 +13,7 @@ const Home: React.FC<HomeProps> = ({ isDark, setTheme }) => {
       <img className="profile" src={Profile} alt="cartoon profile"></img>
       <div className="infobar">
         <div>
-          <strong>Anthony Lisa</strong>
+          <strong className="dev">Anthony Lisa</strong>
         </div>
         <div>
           <strong>Front-end </strong> ◇<strong> Full-stack </strong> ◇

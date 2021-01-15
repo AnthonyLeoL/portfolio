@@ -42,7 +42,7 @@ const Tutoring: React.FC = () => {
           </div>
           <br />
           <div style={{ textAlign: "center" }}>
-            For private tutoring inquiry &nbsp;
+            For private tutoring inquire &nbsp;
             <a
               href="https://docs.google.com/forms/d/e/1FAIpQLSdQGxn1WEwGuJmrh3EWI5MchICFKuuex3r10av4P-JGgKSFcA/viewform?usp=sf_link"
               target="blank"

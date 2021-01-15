@@ -9,6 +9,7 @@ import {
 
 import React from "react";
 import ProjectDetails from "../components/ProjectDetails";
+import "./Projects.css";
 
 const dd = require("../resources/icons/dailydetails.JPG");
 const OMP = require("../resources/icons/OMP1.jpg");
@@ -25,8 +26,10 @@ const Projects: React.FC = () => {
     <div className="project">
       <div className="text-container">
         <div className="text-break ">
-          See github readmes for more techinal details and full descriptions.
-          See resume for professional projects and experience
+          <div>
+            See github readmes for more techinal details and full descriptions.
+          </div>
+          <div>See resume for professional projects and experience</div>
         </div>
       </div>
       <div className="project-page">
@@ -88,9 +91,9 @@ const Projects: React.FC = () => {
             },
           ]}
         />
-        <div className="text-container">
+        {/* <div className="text-container">
           <div className="text-break">Just for fun projects</div>
-        </div>
+        </div> */}
         <ProjectDetails
           name="Graduation cap"
           description={hatDesc}

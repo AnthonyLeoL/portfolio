@@ -18,32 +18,30 @@ const ProjectDetails: React.FC<ProjectDeatilsProps> = ({
   bottomBar,
 }) => {
   return (
-    <div className="project-container">
-      <span className="title">{name}</span>
-      <div className="project-body">
-        <img className="image" src={img} alt="project preview"></img>
-        <p>{description}</p>{" "}
-        <div className="bottom-bar">
-          {bottomBar.map(
-            (
-              item,
-              i
-            ): React.DetailedHTMLProps<
-              React.AnchorHTMLAttributes<HTMLAnchorElement>,
-              HTMLAnchorElement
-            > => {
-              return (
-                <a key={i} href={item.link} target="blank">
-                  <img
-                    className="icon"
-                    src={item.icon}
-                    alt="project link"
-                  ></img>
-                </a>
-              );
-            }
-          )}
-        </div>
+    <div className="project-container mini">
+      <div className="main-info">
+        <span className="title">{name}</span>
+        <div className="project-body">
+          <img className="image" src={img} alt="project preview"></img>
+          <p>&emsp;&emsp; {description}</p>{" "}
+        </div>{" "}
+      </div>
+      <div className="bottom-bar">
+        {bottomBar.map(
+          (
+            item,
+            i
+          ): React.DetailedHTMLProps<
+            React.AnchorHTMLAttributes<HTMLAnchorElement>,
+            HTMLAnchorElement
+          > => {
+            return (
+              <a key={i} href={item.link} target="blank">
+                <img className="icon" src={item.icon} alt="project link"></img>
+              </a>
+            );
+          }
+        )}
       </div>
     </div>
   );
